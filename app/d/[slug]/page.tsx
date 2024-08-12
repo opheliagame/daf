@@ -4,11 +4,6 @@ import DictLayout1 from "@/components/dict-layout-1";
 import Menu from "@/components/menu";
 import Header from "@/components/header";
 
-type DictItem = {
-  slug: string;
-  title: string;
-  content: string;
-}
 
 export default function Page({ params }: { params: { slug: string } }) {
   const item = data.find(d => d.slug == params.slug)
